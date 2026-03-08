@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "PantryEye",
+    "slug": "pantry-eye",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#0a0a0f"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0a0a0f"
+      },
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE"
+      ]
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        { "cameraPermission": "Allow PantryEye to access your camera to scan groceries." }
+      ],
+      [
+        "expo-image-picker",
+        { "photosPermission": "Allow PantryEye to access your photos to scan groceries." }
+      ],
+      "expo-notifications"
+    ]
+  }
+}
